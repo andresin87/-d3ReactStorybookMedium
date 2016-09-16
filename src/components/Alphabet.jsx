@@ -9,7 +9,7 @@ class Alphabet extends Component {
     static letters = "abcdefghijklmnopqrstuvwxyz".split('');
     state = {alphabet: []};
 
-    componentWillMount() {
+    componentDidMount() {
         d3.interval(() => this.setState({
             alphabet: d3.shuffle(Alphabet.letters)
                        .slice(0, Math.floor(Math.random() * Alphabet.letters.length))
