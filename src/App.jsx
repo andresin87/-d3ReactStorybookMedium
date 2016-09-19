@@ -13,7 +13,6 @@ class App extends Component {
   }
 
   render() {
-
     return (
       <div className="container">
         <h2>Animated typing built with React and d3js v4 transitions</h2>
